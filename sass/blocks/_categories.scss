@@ -1,0 +1,67 @@
+.categories {
+	height: 628px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	// background-color: rgba(255, 0, 50, 0.5);
+	background: url('../img/categories-bg.jpg') no-repeat center grey;
+}
+
+.categories__title {
+	margin-top: 0;
+}
+
+.categories__wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 1097px;
+}
+
+.categories__item {
+	position: relative;
+	width: 346px;
+	height: 288px;
+	margin-right: 30px;
+	// background-color: grey;
+}
+
+.categories__item--1 {
+	background: url('../img/category1.jpg') no-repeat center grey;
+}
+
+.categories__item--2 {
+	background: url('../img/category2.jpg') no-repeat center grey;
+}
+
+.categories__item--3 {
+	background: url('../img/category3.jpg') no-repeat center grey;
+}
+
+.categories__item--1::before,
+.categories__item--2::before,
+.categories__item--3::before {
+	content: "";
+	position: absolute;
+	 width: 0;
+	height: 0;
+	border-bottom: 289px solid #fcff19;
+	border-right: 336px solid transparent;
+	left: 0;
+	top: 0;
+	opacity: 0.17;
+	// z-index: 10;
+	display: none;
+}
+
+.categories__item--1:hover::before,
+.categories__item--2:hover::before,
+.categories__item--3:hover::before {
+	display: block;
+}
+
+
+
+// CONTACT
+.contact {
+	background: url('../img/contact-bg.jpg') no-repeat center lightgrey;
+}

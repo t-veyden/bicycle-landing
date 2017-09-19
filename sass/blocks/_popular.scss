@@ -1,0 +1,18 @@
+.popular {
+	height: 628px;
+	background-color: rgba(255, 50, 0, 0.5);
+}
+
+.popular__title {
+	margin-top: 0;
+	text-align: center;
+}
+
+.popular__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.popular__item {
+	background-color: rgba(255, 0, 0, 0.5);
+}

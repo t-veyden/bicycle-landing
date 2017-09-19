@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>landing</title>
+    <title>Bikeshop</title>
     <link href="css/style.css" rel="stylesheet">
     <!-- <script> -->
     <!-- // Picture element HTML5 shiv -->
@@ -19,11 +19,11 @@
           <img class="logo--header"
           src="" width="" height="" alt="The Bike Shop logo">
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__items">
-            <li class="main-nav__item  sub-menu">
+        <nav class="main-menu">
+          <ul class="main-menu__items">
+            <li class="main-menu__item">
               <a href="">Bicycles</a>
-              <ul class="sub-menu__items">
+              <ul class="sub-menu">
                 <li class="sub-menu__item">
                   <a href="">Fixed / single speed</a>
                 </li>
@@ -35,16 +35,16 @@
                 </li>
               </ul>
             </li>
-            <li class="main-nav__item">
+            <li class="main-menu__item">
               <a href="">Parts</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-menu__item">
               <a href="">Accessories</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-menu__item">
               <a href="">Extras</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-menu__item">
               <a href="">
                 <span class="visually-hidden">Cart</span>
               </a>
@@ -89,21 +89,21 @@
       <section class="categories">
         <h2 class="categories__title">Categories</h2>
         <div class="categories__wrapper  container">
-          <section class="categories__item">
+          <section class="categories__item  categories__item--1">
             <h2>Fixed / single speed</h2>
             <p>Are You ready for the 27.5 Revolution?</p>
             <div class="categories__invisible">
               <a href="#" class="categories__btn">Go to store</a>
             </div>
           </section>
-          <section class="categories__item">
+          <section class="categories__item  categories__item--2">
             <h2>Premium series</h2>
             <p>Exclusive bike components</p>
             <div class="categories__invisible">
               <a href="#" class="categories__btn">Go to store</a>
             </div>
           </section>
-          <section class="categories__item">
+          <section class="categories__item  categories__item--3">
             <h2>City bikes</h2>
             <p>Street Playground</p>
             <div class="categories__invisible">
@@ -154,14 +154,14 @@
         </div>
       </section>
       <section class="contact">
-        <h2>Contact us</h2>
-        <form action="#" method="get">
+        <h2 class="contact__title">Contact us</h2>
+        <form class="contact__form" action="#" method="post">
           <fieldset>
             <legend>
               <span class="visually-hidden"></span>
             </legend>
-            <input type="text">
-            <input type="text">
+            <input type="text"  placeholder="Name" required>
+            <input type="text"  placeholder="Surname" required>
           </fieldset>
           <fieldset>
             <legend>

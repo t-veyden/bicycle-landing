@@ -1,0 +1,51 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 1200px;
+	font {
+		size: 15px;
+		weight: normal;
+		family: "Roboto", "Arial", sans-serif;
+	}
+	line-height: 32px;
+	color: #000;
+	background-color: #fff;
+	margin: 0; //what for?
+}
+
+h1 {
+
+}
+
+h2 {
+	font {
+		size: 28px;
+		weight: bold;
+		family: "Roboto", "Arial", sans-serif;
+	}
+	line-height: 32px;
+	color: #000;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}

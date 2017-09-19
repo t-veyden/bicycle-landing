@@ -1,0 +1,32 @@
+.slider {
+	position: relative;
+	//width: 100vw; //or 100vw? or smth else?
+	// height: 980px;
+	// background-color: red;
+}
+
+.slider__items {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	// background-color: red;
+}
+
+.slider__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //padding-top: 50px;
+  //overflow: hidden;
+}
+
+.slider-item {
+  //display: none;
+}
+
+.smth {
+
+}
