@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bikeshop</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>Bikeshop</title>
     <!-- <script> -->
     <!-- // Picture element HTML5 shiv -->
     <!-- document.createElement( "picture" ); -->
@@ -87,7 +88,7 @@
     </header>
     <main>
       <section class="categories">
-        <h2 class="categories__title">Categories</h2>
+        <h2 class="section-title">Categories</h2>
         <div class="categories__wrapper  container">
           <section class="categories__item  categories__item--1">
             <h2>Fixed / single speed</h2>
@@ -113,18 +114,24 @@
         </div>
       </section>
       <section class="popular">
-        <h2 class="popular__title">Popular bikes</h2>
+        <h2 class="section-title">Popular bikes</h2>
         <div class="popular__wrapper">
           <article class="popular__item">
             <img class="popular__img"
             src="img/item-photo.jpg" width="490" height="391" alt="Fixed gear bicycle">
             <div class="popular__description">
               <div class="popular__description-wrapper">
-                <h2>Fixed gear</h2>
+                <b class="popular__title">Fixed gear</b>
                 <span class="popular__price">&#36;249.00</span>
               </div>
-              <select name="" id=""></select>
-              <a href="" class="popular__btn">Buy</a>
+              <div class="popular__select-wrapper">
+                <select class="popular__select" name="" id="">
+                  <option value="">Option a</option>
+                  <option value="">Option b</option>
+                </select>
+                <a href="" class="popular__btn">Buy</a>
+              </div>
+
             </div>
           </article>
           <article class="popular__item">
@@ -132,11 +139,16 @@
             src="img/item-photo2.jpg" width="490" height="391" alt="Big boy ultra bicycle">
             <div class="popular__description">
               <div class="popular__description-wrapper">
-                <h2>Big boy ultra</h2>
+                <b class="popular__title">Big boy ultra</b>
                 <span class="popular__price">&#36;249.00</span>
               </div>
-              <select name="" id=""></select>
-              <a href="" class="popular__btn">Buy</a>
+              <div class="popular__select-wrapper">
+                <select class="popular__select" name="" id="">
+                  <option value="">Option a</option>
+                  <option value="">Option b</option>
+                </select>
+                <a href="" class="popular__btn">Buy</a>
+              </div>
             </div>
           </article>
           <article class="popular__item">
@@ -144,38 +156,44 @@
             src="img/item-photo3.jpg" width="490" height="391" alt="Sanchaez bicycle">
             <div class="popular__description">
               <div class="popular__description-wrapper">
-                <h2>Sanchaez</h2>
+                <b class="popular__title">Sanchaez</b>
                 <span class="popular__price">&#36;249.00</span>
               </div>
-              <select name="" id=""></select>
-              <a href="" class="popular__btn">Buy</a>
+              <div class="popular__select-wrapper">
+                <select class="popular__select" name="" id="">
+                  <option value="">Option a</option>
+                  <option value="">Option b</option>
+                </select>
+                <a href="" class="popular__btn">Buy</a>
+              </div>
             </div>
           </article>
         </div>
       </section>
       <section class="contact">
-        <h2 class="contact__title">Contact us</h2>
+        <h2 class="section-title">Contact us</h2>
+        <p>Please contact us for all inquiries and purchase options.</p>
         <form class="contact__form" action="#" method="post">
           <fieldset>
             <legend>
               <span class="visually-hidden"></span>
             </legend>
-            <input type="text"  placeholder="Name" required>
-            <input type="text"  placeholder="Surname" required>
+            <input class="contact__name" type="text"  placeholder="Name" required>
+            <input class="contact__surname" type="text"  placeholder="Surname" required>
           </fieldset>
           <fieldset>
             <legend>
               <span class="visually-hidden"></span>
             </legend>
-            <input type="mail">
+            <input class="contact__mail" type="mail" placeholder="user@domain.com">
           </fieldset>
           <fieldset>
             <legend>
               <span class="visually-hidden"></span>
             </legend>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea class="contact__message" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
           </fieldset>
-          <submit>Send</submit>
+          <button class="contact__form-submit" type="submit">Send</button>
         </form>
       </section>
     </main>

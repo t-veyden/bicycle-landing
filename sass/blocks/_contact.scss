@@ -1,3 +1,71 @@
-.contact__title {
+.contact {
 	text-align: center;
+}
+
+.contact .section-title {
+	padding-top: 60px;
+}
+
+.contact__form {
+	padding-bottom: 84px;
+}
+
+.contact__form fieldset {
+	border: none;
+}
+
+.contact__name,
+.contact__surname,
+.contact__mail,
+.contact__message {
+	padding-left: 25px;
+	border: 1px solid #dadada;
+	border-radius: 10px;
+}
+
+.contact__name,
+.contact__surname {
+	width: 215px;
+	height: 40px;
+}
+
+.contact__surname {
+	margin-left: 23px;
+}
+
+.contact__mail,
+.contact__message {
+	width: 448px;
+}
+
+.contact__mail {
+	height: 40px;
+}
+
+.contact__name::placeholder,
+.contact__surname::placeholder,
+.contact__mail::placeholder,
+.contact__message::placeholder {
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.contact__message {
+	padding-top: 15px;
+	font-size: 14px;
+}
+
+.contact__form-submit {
+	width: 448px;
+	height: 44px;
+	// background-color: #808080;
+	background-color: #b7b7b7;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
 }

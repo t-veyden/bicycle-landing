@@ -8,15 +8,15 @@ html {
 
 body {
 	min-width: 1200px;
-	font {
-		size: 15px;
-		weight: normal;
-		family: "Roboto", "Arial", sans-serif;
-	}
+	// min-width: 1920px;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: "Roboto", "Arial", sans-serif;
 	line-height: 32px;
 	color: #000;
 	background-color: #fff;
 	margin: 0; //what for?
+	// text-align: center;
 }
 
 h1 {
@@ -24,11 +24,9 @@ h1 {
 }
 
 h2 {
-	font {
-		size: 28px;
-		weight: bold;
-		family: "Roboto", "Arial", sans-serif;
-	}
+	font-size: 28px;
+	font-weight: 700;
+	font-family: "Roboto", "Arial", sans-serif;
 	line-height: 32px;
 	color: #000;
 }
@@ -48,4 +46,12 @@ img {
 	border: 0;
 	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
+}
+
+
+// ================
+.section-title {
+	// text-align: center;
+	margin: 0 auto;
+	text-transform: uppercase;
 }
