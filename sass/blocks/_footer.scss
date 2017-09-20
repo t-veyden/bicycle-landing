@@ -1,0 +1,32 @@
+.footer {
+	display: flex;
+	background-color: #fcff19;
+}
+
+.footer__logo {
+	margin-left: 400px;
+	margin-top: 17px;
+	// margin-bottom: 17px;
+}
+
+.footer-nav {
+	margin-right: 400px;
+	margin-left: auto;
+}
+
+.footer-nav__items {
+	display: flex;
+	list-style: none;
+}
+
+.footer-nav__item {
+	margin-right: 35px;
+}
+
+.footer-nav__item a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+	font-family: "Roboto", "Arial", sans-serif;
+	text-transform: uppercase;
+}

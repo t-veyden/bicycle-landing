@@ -7,8 +7,9 @@
 	background: url('../img/categories-bg.jpg') no-repeat center grey;
 }
 
-.categories__title {
-	margin-top: 0;
+.categories .section-title {
+	padding-top: 70px;
+	margin-bottom: 70px;
 }
 
 .categories__wrapper {
@@ -57,11 +58,4 @@
 .categories__item--2:hover::before,
 .categories__item--3:hover::before {
 	display: block;
-}
-
-
-
-// CONTACT
-.contact {
-	background: url('../img/contact-bg.jpg') no-repeat center lightgrey;
 }
