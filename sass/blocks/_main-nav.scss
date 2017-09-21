@@ -1,6 +1,6 @@
 .main-menu {
 	min-width: 500px;
-	background-color: rgba(255, 0, 0, 0.5);
+	// background-color: rgba(255, 0, 0, 0.5);
 }
 
 //ul
@@ -34,8 +34,13 @@
 .main-menu__item a {
 	display: block;
 	color: #fff;
+	// font-size: 15px;
+	font-weight: 700;
+	// font-family: "Roboto", "Arial", sans-serif; //походу оно и так оно, почистить в др местах тогда
 	text-decoration: none;
+	text-transform: uppercase;
 	padding: 10px 25px;
+	cursor: pointer;
 	// margin-right: 35px;
 	// background-color: turquoise;
 	&:hover {
@@ -46,6 +51,18 @@
 
 .main-menu__item:last-of-type {
 	margin-right: 0;
+	position: relative;
+	// background: url('../img/cart-icon.png') no-repeat center;
+}
+
+.main-menu__item:last-of-type a::before {
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: 0;
+	right: 0;
+	background: url('../img/cart-icon.png') no-repeat center;
 }
 
 .sub-menu {

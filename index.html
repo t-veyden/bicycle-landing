@@ -16,9 +16,9 @@
   <body>
     <header class="main-header">
       <div class="main-header__wrapper  container">
-        <div class="logo">
-          <img class="logo--header"
-          src="" width="" height="" alt="The Bike Shop logo">
+        <div class="header__logo">
+          <img
+          src="img/logo-white.png" width="160" height="50" alt="The Bikeshop logo">
         </div>
         <nav class="main-menu">
           <ul class="main-menu__items">
@@ -54,62 +54,49 @@
         </nav>
       </div>
       <div class="slider">
-        <div class="slider__controlls">
-          <div class="slider__controlls--left"></div>
-          <div class="slider__controlls--right"></div>
-        </div>
-        <div class="slider__items">
-          <article class="slider__item">
-            <img src="" alt="" class="slider__img">
-            <div class="slider__description  container">
-              <h1>Lorem Ipsum</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-              <a href="" class="slider__btn">Shop Spikes</a>
-            </div>
-          </article>
-          <article class="slider__item">
-            <img src="" alt="" class="slider__img">
-            <div class="slider__description  container">
-              <h1>Handmade Bicycle</h1>
-              <p>You create the journey, we supply the parts.</p>
-              <a href="#" class="slider__btn">Shop Bikes</a>
-            </div>
-          </article>
-          <article class="slider__item">
-            <img src="" alt="" class="slider__img">
-            <div class="slider__description  container">
-              <h1>Lorem Ipsum</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-              <a href="" class="slider__btn">Shop Mikes</a>
-            </div>
-          </article>
-        </div>
-      </div>
+        <article class="slider__item">
+            <b class="slider__title">Handmade Bicycle</b>
+            <p class="slider__description">You create the journey, we supply the parts.</p>
+            <a href="#" class="slider__btn">Shop Bikes</a>
+        </article>
+        <article class="slider__item">
+            <b class="slider__title">Lorem Ipsum</b>
+            <p class="slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <a href="#" class="slider__btn">Shop Spikes</a>
+        </article>
+        <article class="slider__item">
+            <b class="slider__title">Dolor sit amet</b>
+            <p class="slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <a href="#" class="slider__btn">Shop Mikes</a>
+        </article>
+    		<a onclick="plusSlides(-1)" class="prev">&#10094</a>
+    		<a onclick="plusSlides(1)" class="next">&#10095</a>
+    	</div>
     </header>
     <main>
       <section class="categories">
         <h2 class="section-title">Categories</h2>
         <div class="categories__wrapper  container">
           <section class="categories__item  categories__item--1">
-            <h2>Fixed / single speed</h2>
-            <p>Are You ready for the 27.5 Revolution?</p>
-            <div class="categories__invisible">
-              <a href="#" class="categories__btn">Go to store</a>
+            <div class="categories__info">
+              <h2 class="categories__title">Fixed / single speed</h2>
+              <p>Are You ready for the 27.5 Revolution?</p>
             </div>
+            <a href="#" class="categories__btn">Go to store</a>
           </section>
           <section class="categories__item  categories__item--2">
-            <h2>Premium series</h2>
-            <p>Exclusive bike components</p>
-            <div class="categories__invisible">
-              <a href="#" class="categories__btn">Go to store</a>
+            <div class="categories__info">
+              <h2 class="categories__title">Premium series</h2>
+              <p>Exclusive bike components</p>
             </div>
+            <a href="#" class="categories__btn">Go to store</a>
           </section>
           <section class="categories__item  categories__item--3">
-            <h2>City bikes</h2>
-            <p>Street Playground</p>
-            <div class="categories__invisible">
-              <a href="#" class="categories__btn">Go to store</a>
+            <div class="categories__info">
+              <h2 class="categories__title">City bikes</h2>
+              <p>Street Playground</p>
             </div>
+            <a href="#" class="categories__btn">Go to store</a>
           </section>
         </div>
       </section>
@@ -199,7 +186,7 @@
     </main>
     <footer class="footer">
       <div class="footer__logo">
-        <img src="img/logo-dark.png" width="115" height="36" alt="The Bike Shop logo">
+        <img src="img/logo-dark.png" width="115" height="36" alt="The Bikeshop logo">
       </div>
       <nav class="footer-nav">
         <ul class="footer-nav__items">
@@ -218,5 +205,38 @@
         </ul>
       </nav>
     </footer>
+    <script>
+    var slideIndex=1;
+    showSlides(slideIndex);
+
+    function plusSlides(n){
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n){
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n){
+      var slides = document.getElementsByClassName("slider__item");
+
+      if(n > slides.length){
+        slideIndex = 1;
+      }
+      if(n < 1){
+        slideIndex = slides.length;
+      }
+      for(var i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+      }
+       slides[slideIndex-1].style.display = "block";
+    }
+
+    // function slideTime(n) {
+    //  n = 1;
+    //  showSlides(slideIndex += n);
+    // }
+    // setInterval(slideTime, 5000);﻿
+    </script>
   </body>
 </html>
