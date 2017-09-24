@@ -69,4 +69,12 @@
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
+	&:hover {
+		// background-color: #000;
+	}
+}
+
+.contact__form-submit:hover {
+	background-color: #000;
+	color: #fcff19;
 }

@@ -12,11 +12,17 @@
 .popular__wrapper {
 	display: flex;
 	justify-content: space-between;
+	margin: 0 50px;
 	// text-align: left;
 }
 
 .popular__item {
 	// background-color: rgba(255, 0, 0, 0.5);
+	// margin-right: 50px;
+}
+
+.popular__item:last-of-type {
+	margin-right: 0;
 }
 
 .popular__description {
@@ -53,11 +59,16 @@
 	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #fcff19;
+	// color: #fcff19;
+	color: #fff;
 	// background-color: #000;
 	// border-radius: 90%;
 	position: relative;
 	padding: 8px 37px 0 37px;
+}
+
+.popular__btn:hover {
+	color: #fcff19;
 }
 
 .popular__btn::before {
@@ -67,9 +78,15 @@
 	right: 0;
 	width: 95px;
 	height: 44px;
-	background-color: #000;
+	// background-color: #000;
+	background-color: #b7b7b7;
+	// color: #fff;
 	border-radius: 10px;
 	z-index: -1;
+}
+
+.popular__btn:hover::before {
+		background-color: #000;
 }
 
 .popular__select-wrapper {

@@ -12,5 +12,13 @@
 	padding-top: 20px;
 }
 
+.header__scroll {
+	width: 66px;
+	height: 77px;
+	background: url('../img/scroll-icon.png') no-repeat center;
+	cursor: pointer;
+	margin: 250px auto;
+}
+
 // можно сделать перемотку по той хуйне на 50vh, тогда должно везде однаково отображаться
 // а вообще конечно надо освежить память насчёт легититмности таких единиц измерений
