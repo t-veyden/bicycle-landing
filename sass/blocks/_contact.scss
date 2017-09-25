@@ -60,21 +60,16 @@
 .contact__form-submit {
 	width: 448px;
 	height: 44px;
-	// background-color: #808080;
-	background-color: #b7b7b7;
-	color: #fff;
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
+	color: $btn-text;
+	background-color: $btn-body;
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
 	&:hover {
-		// background-color: #000;
+		background-color: $base-colour;
+		color: $accent-colour;
 	}
-}
-
-.contact__form-submit:hover {
-	background-color: #000;
-	color: #fcff19;
 }

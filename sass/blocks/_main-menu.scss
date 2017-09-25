@@ -1,0 +1,87 @@
+.main-menu {
+	min-width: 500px;
+	margin-top: 11px;
+}
+
+.main-menu__items {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-menu__item {
+	position: relative;
+	&:last-of-type {
+		margin-right: 0;
+		position: relative;
+	}
+}
+
+.main-menu__item a {
+	display: block;
+	padding: 10px 18px 10px 18px;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $btn-text;
+	cursor: pointer;
+	&:hover {
+		color: $base-colour;
+		background-color: $accent-colour;
+		border-radius: 10px;
+	}
+}
+
+.main-menu__item:last-of-type a {
+	height: 32px;
+	&:hover {
+		background-color: transparent;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		width: 26px;
+		height: 26px;
+		top: 10px;
+		right: 0;
+		background: url('../img/cart-icon.png') no-repeat center;
+	}
+}
+
+.sub-menu {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sub-menu a {
+	padding-bottom: 0;
+	color: $base-colour;
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.sub-menu__item {
+	height: 43px;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 220px;
+  list-style: none;
+  background-color: $accent-colour;
+	border-radius: 0 10px 10px 10px;
+  display: none;
+}
+
+.main-menu__items > li:hover .sub-menu {
+  display: block;
+}

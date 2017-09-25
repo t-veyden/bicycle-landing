@@ -65,8 +65,8 @@
             <p class="slider__description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             <a class="slider__btn" href="#">Shop Mikes</a>
         </article>
-    		<a class="slider__prev">&#10094</a>
-    		<a class="slider__next">&#10095</a>
+    		<a class="slider__prev" onclick="plusSlides(-1)">&#10094</a>
+    		<a class="slider__next" onclick="plusSlides(1)">&#10095</a>
     	</div>
     </header>
     <main>
@@ -221,8 +221,6 @@
     }
 
     function showSlides(n){
-      var sliderPrev = document.querySelector('.slider__prev');
-      var sliderNext = document.querySelector('.slider__next');
       var slides = document.querySelectorAll('.slider__item');
 
       if(n > slides.length){
@@ -235,26 +233,8 @@
         slides[i].style.display = "none";
       }
        slides[slideIndex-1].style.display = "block";
-
-       sliderPrev.addEventListener('click', function() {
-         showSlides(slideIndex += -1);
-       });
-
-       sliderNext.addEventListener('click', function() {
-         showSlides(slideIndex += 1);
-       });
     }
-
     showSlides(slideIndex);
-
-
-
-// AUTO
-    // function slideTime(n) {
-    //  n = 1;
-    //  showSlides(slideIndex += n);
-    // }
-    // setInterval(slideTime, 5000);﻿
     </script>
   </body>
 </html>
