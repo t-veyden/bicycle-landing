@@ -9,14 +9,11 @@
 .popular__wrapper {
 	display: flex;
 	justify-content: space-around;
-	// flex-wrap: wrap;
-	// margin: 0 50px;
 }
 
 .popular__item {
-	// width: 30%;
-	margin-right: 40px;
 	width: 330px;
+	margin-right: 40px;
 }
 
 .popular__description {
@@ -29,93 +26,55 @@
 .popular__description-wrapper {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	word-wrap: break-word;
-	// justify-content: space-between;
-	// width: 155px;
-	// padding-left: 15px;
 }
 
 .popular__title {
-	// display: flex;
-	text-transform: uppercase;
-	text-align: left;
-	line-height: 1.2;
 	margin-right: 14px;
+	line-height: 1.2;
+	text-align: left;
+	text-transform: uppercase;
 }
 
 .popular__price {
 	text-align: left;
 }
 
-// .popular__btn {
-// 	text-align: center;
-// 	text-decoration: none;
-// 	font-size: 12px;
-// 	font-family: "Roboto", "Arial", sans-serif;
-// 	font-weight: 700;
-// 	text-transform: uppercase;
-// 	color: #fff;
-// 	position: relative;
-// 	padding: 8px 37px 0 37px;
-// }
-
 .popular__btn {
+	position: relative;
 	width: 80px;
 	height: 43px;
 	margin-left: 6px;
-	// margin-left: auto;
+	padding: 0;
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: $btn-text;
-	position: relative;
 	background-color: $btn-body;
 	border-radius: 10px;
 	border: none;
-	padding: 0;
 	cursor: pointer;
+	&:hover {
+		color: $accent-colour;
+		background-color: $base-colour;
+	}
 }
-
-.popular__btn:hover {
-	color: $accent-colour;
-	background-color: $base-colour;
-}
-
-// .popular__btn::before {
-// 	content: "";
-// 	position: absolute;
-// 	top: 0;
-// 	right: 0;
-// 	width: 95px;
-// 	height: 44px;
-// 	background-color: $btn-body;
-// 	border-radius: 10px;
-// 	z-index: -1;
-// }
-
-// .popular__btn:hover::before {
-// 		background-color: #000;
-// }
 
 .popular__select-wrapper {
 	display: flex;
-	// justify-content: space-between;
-	// flex-wrap: nowrap;
-	// width: 250px;
 	height: 45px;
 }
 
 .popular__select {
-	border-radius: 10px;
-	background: #fff;
-	border: 1px solid #000;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 700;
 	width: 120px;
 	height: 40px;
-	padding-left: 13px;
 	margin-top: 3px;
+	padding-left: 13px;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 10px;
 	cursor: pointer;
 }
